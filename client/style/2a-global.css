@@ -1,0 +1,76 @@
+/*----------------------------------------------
+------------------------------------------------
+	Clearfix - Parent of Floated Items
+------------------------------------------------
+----------------------------------------------*/
+
+.clearfix:after {
+     visibility: hidden;
+     display: block;
+     font-size: 0;
+     content: " ";
+     clear: both;
+     height: 0;
+     }
+.clearfix { display: inline-block; }
+/* start commented backslash hack \*/
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
+/* close commented backslash hack */
+
+
+/*----------------------------------------------
+------------------------------------------------
+	Page Layout
+------------------------------------------------
+----------------------------------------------*/
+
+.sidebar {
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	width: 20%;
+	overflow-y: auto;
+	overflow-x: hidden;
+	background: #F7F7F7;
+	box-shadow: 3px 0 5px -2px #888;
+	z-index: 10;
+}
+
+.main {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	width: 80%;
+	background: #fff;
+}
+/*----------------------------------------------
+------------------------------------------------
+	Custom Styles
+------------------------------------------------
+----------------------------------------------*/
+a {
+	text-decoration: none;
+	color: grey;
+	cursor: pointer;
+}
+
+body {
+	font-family: Arial;
+	font-size: 15px;
+	color: black;
+}
+
+/*----------------------------------------------
+------------------------------------------------
+	Grid
+------------------------------------------------
+----------------------------------------------*/
+
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
+}

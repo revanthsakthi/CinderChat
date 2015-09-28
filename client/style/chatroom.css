@@ -1,0 +1,319 @@
+/*----------------------------------------------
+------------------------------------------------
+	Header - Account Box and Chatroom Title
+------------------------------------------------
+----------------------------------------------*/
+.account-box {
+	display: block;
+	width: 100%;
+	height: 50px;
+	background: #005b79;
+	font-weight: normal;
+}
+
+.online-icon1 {
+	float: left;
+	border-radius: 50%;
+	height: 12px;
+	width: 12px;
+	background: #35AC19;
+	box-shadow: 1px 1px 3px -2px black;
+	position: relative;
+ 	top: 50%;
+  	transform: translateY(-50%);
+  	margin-right: 5px;
+  	margin-left: 10px;
+}
+
+.account-box>img {
+	float: left;
+	border-radius: 4px;
+	border: 0;
+	background: white;
+	position: relative;
+	top:50%;
+  	transform: translateY(-50%);
+  	margin-right: 5px;
+  	
+}
+
+.account-box>h2 {
+	float: left;
+	font-size: 15px;
+	color: white;
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.float-left {
+	float: left;
+}
+
+/*----------------------------------------------
+------------------------------------------------
+	Sidebar Navigation
+------------------------------------------------
+----------------------------------------------*/
+.chatNav {
+	display: block;
+}
+
+.btn {
+	display: block;
+	width: 100%;
+	height: 40px;
+	border-left: 4px solid #F15C22;
+}
+
+.chatNav> a > p {
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+	margin: 0 10px;
+}
+
+.chatNav>div {
+	height: 1px;
+	width: 100%;
+	background: #CBCBCB;
+}
+
+#userprofile-chatroom {
+	border-left: 4px solid #3DC5BF;
+}
+
+#create-chatroom {
+	border-left: 4px solid #7BB855;
+}
+
+#create-chatroom-textbox {
+	display: block;
+	width: 100%;
+	height: 40px;
+	border-left: 4px solid #7BB855;
+	padding: 2px 5px;
+	outline: none;
+	font-size: 16px;
+}
+
+/*----------------------------------------------
+------------------------------------------------
+	Sidebar Lists
+------------------------------------------------
+----------------------------------------------*/
+
+.active {
+	background: pink;
+}
+
+.list {
+	width: 100%;
+	height: 190px;
+}
+
+.sidebar-title {
+	position: relative;
+	width: 100%;
+	height: 35px;
+	box-shadow: 0 3px 3px -3px grey;
+}
+
+.sidebar-title>h2 {
+	width:100%;
+	text-align: center;
+	color:#04436A ;
+	padding: 10px 0;
+}
+
+
+.lines {
+	position: absolute;
+	height: 1px;
+	width: 25px;
+	background:  #04436A;
+}
+
+.line-left {
+	top: 50%;
+	transform: translateY(-50%);
+	left: 5px;
+}
+
+.line-right {
+	bottom: 50%;
+	transform: translateY(-50%);
+	right: 5px;
+}
+
+.channels-list,
+.users-list {
+	overflow-y: auto;
+	overflow-x: hidden;
+	height: 145px;
+	width: 100%;
+}
+
+.channels-list .notification {
+	display: inline-block;
+	border-radius: 4px;
+	padding: 2px 4px;
+	color:white;
+	background: #DC0032;
+	box-shadow: 0 3px 8px -4px grey;
+}
+
+.channels-list ul{
+	width: 100%;
+}
+
+.channels-list li {
+	color: grey;
+}
+
+.channels-list li,
+.users-list li {
+	width: 100%;
+	padding: 2px 0;
+	padding-left: 10px;
+}
+
+.users-list li {
+	display: block;
+	padding-left: 5px;
+}
+
+.users-list p {
+	color: #808080;
+	display: inline-block;
+}
+
+.users-list img {
+	border-radius: 4px;
+	border: 0;
+	background: white;
+	position: relative;
+  	display: inline-block;
+}
+
+.logo-wrapper {
+	position: absolute;
+	width: 100%;
+	bottom: 0;
+	height: 70px;
+	background: #008cbc;
+}
+
+.logo-wrapper>img {
+	position: relative;
+	top: 14px;
+	left: 8px;
+}
+/*----------------------------------------------
+------------------------------------------------
+	Main Header
+------------------------------------------------
+----------------------------------------------*/
+.hashtag {
+	color: #CBCBCB;
+	font-weight: bold;
+}
+.chatroomName {
+	height: 50px;
+	width: 100%;
+	background: white;
+	border-bottom: 1px solid #CBCBCB;
+}
+.chatroomName>h1 {
+	display: inline;
+	vertical-align: middle;
+	line-height: 50px;
+	font-size: 25px;
+	color: #444444;
+	padding-left: 20px;
+}
+
+/*----------------------------------------------
+------------------------------------------------
+	Main Chatarea
+------------------------------------------------
+----------------------------------------------*/
+.chatroom-message-area {
+	display: block;
+	width: 100%;
+	position: absolute;
+	top: 50px;
+	bottom: 60px;
+	overflow-y: auto;
+	overflow-x: hidden;
+	background: #fff;
+}
+
+.message {
+	display: block;
+	position: relative;
+	width: 100%;
+	min-height: 40px;
+	padding: 6px 10px;
+	font-size: 14px;
+	border-bottom: 1px solid #CBCBCB;
+}
+
+.message-username {
+	margin-left: 2px;
+}
+
+.user-name-date-wrapper {
+	display: inline;
+	position: absolute;
+	top: 15px;
+	color: #444444;
+}
+
+.message-date {
+	color: #CBCBCB;
+}
+
+.message-username, .message-date{
+	display: inline-block;
+	margin-right: 5px;
+	padding-bottom: 10px;
+	vertical-align: middle;
+	word-wrap: break-word;
+}
+
+.message img {
+	border-radius: 4px;
+}
+.message-content {
+	padding-left: 50px;
+	padding-right: 50px;
+	word-wrap: break-word;
+}
+/*----------------------------------------------
+------------------------------------------------
+	Main Inputarea
+------------------------------------------------
+----------------------------------------------*/
+.input-area {
+	display: block;
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+	height: 60px;
+	border-top: 1px solid #CBCBCB;
+	background: #f7f7f7;
+}
+
+.input-area>input[type=text] {
+	position: relative; 
+	font-size:19px;
+	height:45px;
+	width: 94%;
+	top: 50%;
+	transform: translateY(-50%);
+	margin-right: 3%;
+	margin-left: 3%;
+	padding: 0 10px;
+}
+

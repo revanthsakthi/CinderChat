@@ -1,0 +1,20 @@
+<template name="channelsList">
+		<div class="list channels">
+			<div class="sidebar-title">
+				<div class="lines line-left"> </div>
+				<h2> Channels List </h2>
+				<div class="lines line-right"> </div>
+			</div>
+			
+			<div class="channels-list">
+			<ul>
+			{{#each chatrooms}}
+					<li class="channelslist-item" id="{{_id}}"> 
+						{{name}}  
+						<!--<div class="notification"> {{messagesTotal}} </div>-->
+					</li>
+			{{/each}}
+			</ul>
+			</div>
+		</div>
+</template>

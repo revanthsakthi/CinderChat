@@ -1,0 +1,16 @@
+<template name="login">
+<div class="background-cover">
+	<div class="checkin">
+
+	<img src="/img/CinderChatLogo.png">
+	<div>
+		<h1> Login </h1>
+	</div>
+	<input id="login-email" type=email placeholder="Email" required/>
+	<input id="login-password" type=password placeholder="Password" required/>
+	<input id="login-button" class="checkin-btn" type=submit value="login"/>
+	<p> Don't have an account? <a href="{{pathFor route='signup'}}"> Register Here </a> </p>
+	
+	</div>
+</div>
+</template>
